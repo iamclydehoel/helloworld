@@ -1,0 +1,87 @@
+// Project
+
+.overflow-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+.place {
+  min-width: 280px;
+  max-width: 280px;
+
+  padding: $space-2;
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 1px solid $darken-1;
+  cursor: pointer;
+  transition: background $transition-value;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &:hover {
+    background-color: rgba($black, .05);
+  }
+}
+
+.selected {
+  // color: $blue;
+  border-bottom: 0.1875rem solid $black;
+  padding-bottom: 0.8125rem;
+}
+
+@media (min-width: $breakpoint-lg) {
+  aside {
+    width: 320px;
+  }
+
+  .place {
+    min-width: 320px;
+    max-width: 320px;
+
+    padding: $space-3;
+    text-align: left;
+    border-right: none;
+    border-bottom: 1px solid $darken-1;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .selected {
+    // color: $blue;
+    border-left: 0.1875rem solid $black;
+    padding-left: 1.3125rem;
+    border-bottom: 1px solid $darken-1;
+    padding-bottom: $space-3;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Google Maps
+
+.gm-style > div:nth-child(2) {
+  left: auto !important;
+  right: 5px;
+  bottom: 5px !important;
+  opacity: .4;
+  transition: .4s opacity;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display:none;
+}
+.gmnoprint div {
+  background:none !important;
+}

@@ -1,0 +1,7 @@
+title: Hello World
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: iamclydehoel
+github_username:  iamclydehoel
+
+exclude: [.scss, README.md, node_modules, gulpfile.js, package.json]

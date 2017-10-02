@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+{% include head.html %}
+
+	<body{% if page.bodyClass %} class="{{ page.bodyClass}}" {% endif %}>
+
+		{{ content }}
+
+    {% include footer.html %}
+
+	</body>
+
+</html>

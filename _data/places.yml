@@ -1,0 +1,55 @@
+- name: Mount Shasta
+  country: CA, United States
+  lat: 41.408679
+  long: -122.197584
+  zoom: 12
+  tags: mountain, america
+
+- name: Glen Canyon
+  country: UT, United States
+  lat: 37.170135
+  long: -110.998668
+  zoom: 11
+  tags: canyon, river, america
+
+- name: Al Udeid Air Base
+  country: Qatar
+  lat: 25.117778
+  long: 51.323389
+  zoom: 14
+  tags: military, air base, desert, middle east
+
+- name: Noordwijk aan Zee
+  country: Netherlands
+  lat: 52.248780
+  long: 4.439393
+  zoom: 17
+  tags: obscured, military, europe
+
+- name: Davis-Monthan Air Force Base Aircraft Boneyard
+  country: AZ, United States
+  lat: 32.170028
+  long: -110.849840
+  zoom: 16
+  tags: military, air base, america
+
+- name: Texas Gulf Potash Ponds
+  country: UT, United States
+  lat: 38.482165
+  long: -109.682464
+  zoom: 14
+  tags: canyon, river, america
+
+- name: Ocean Lake
+  country: WY, United States
+  lat: 43.184078
+  long: -108.604658
+  zoom: 13
+  tags: lake, america
+
+- name: Atacama Desert
+  country: Chile
+  lat: -23.541165
+  long: -68.390564
+  zoom: 14
+  tags: desert, america

@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Hello World"
+excerpt: Lorem ipsum dolor sit amet
+bodyClass: overflow-hidden
+---
+
+<div class="flex flex-column lg-flex-row height-v100 width-v100">
+
+  <header class="lg-display-none p2">
+    <h1 class="h3 m0 text-center lh1">{{page.title}}</h1>
+  </header>
+
+  <main class="flex-auto lg-order-last bg-grey">
+    <div id="map" style="width: 100%; height: 100%;">Loading...</div>
+  </main>
+
+  <aside class="flex flex-column bg-light-grey">
+
+    <header class="display-none lg-block p3 bg-white border-bottom border-darken-1">
+      <h2 class="h3 m0">{{page.title}}</h2>
+    </header>
+
+    <div class="overflow-auto">
+      <ul class="flex flex-nowrap flex-row lg-flex-column list-reset m0">
+        {% for place in site.data.places %}
+          <li class="place" data-lat="{{ place.lat }}" data-long="{{ place.long }}" data-zoom="{{ place.zoom }}">
+            <h3 class="m0 truncate">{{ place.name }}</h3>
+            <h4 class="m0 mb1 truncate">{{ place.country }}</h4>
+            <span class="h5 mono">{{ place.lat }}, {{ place.long }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </aside>
+
+</div>
